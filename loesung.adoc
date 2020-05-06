@@ -1,0 +1,18 @@
+= Professionelle Softwareentwicklung: Pflichtabgabe 1 - Lösung
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+=== Aufgabe 2
+
+Beschreiben Sie hier: 
+- Welche Prinzipien wie genau verletzt wurden.
+- Welche Struktur der Code haben muss, damit die Prinzipien eingehalten werden 

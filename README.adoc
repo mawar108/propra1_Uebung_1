@@ -1,0 +1,65 @@
+= Professionelle Softwareentwicklung: Pflichtabgabe 1
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
+== Abgabe
+
+Die Abgabe erfolgt, indem Sie Ihre Lösung in ihr GitHub Repository pushen. Bitte überprüfen Sie über die GitHub Webseite, dass dies funktioniert hat.
+
+IMPORTANT: Die Frist für die Abgabe Freitag, der 15.5.2020 um 12:00 Uhr (Ortszeit Düsseldorf).
+
+=== Strukturierung von Textabgaben
+
+Sie sollten Ihr schriftlichen Ausarbeitungen, soweit verlangt, als https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/[AsciiDoc] formatieren. Die READMEs, die Sie in Ihren bisherigen Projekten finden konnten, sind auch allesamt mit AsciiDoc formatiert und daran können Sie sich orientieren. Github rendert AsciiDoc zu einer schönen Seite zusammen. AsciiDoc-Dateien erkennt man meistens an der Dateiendung `.adoc`.
+
+AsciiDoc ist eine Markup-Formatierungssprache, die in reiner Textform mit jedem Editor geschrieben werden kann. Dafür sind prinzipiell keine Tools notwendig. Sie können aber dennoch ein paar Tools / Plugins in Ihre Editoren installieren, damit Sie ein wenig farbliche / technische Unterstützung beim Schreiben erhalten können. Für viele Editoren gibt es Plugins (https://marketplace.visualstudio.com/items?itemName=joaompinto.asciidoctor-vscode[VS Code / VS Codium], https://marketplace.eclipse.org/content/asciidoctor-editor[für Eclipse], https://plugins.jetbrains.com/plugin/7391-asciidoc[IntelliJ], uvm.). Nutzen Sie was Ihnen am Besten gefällt.
+
+==== Videos
+
+Es gibt viele Anleitungen zur Verwendung AsciiDoc. Hier sind ein paar Ideen:
+
+* Vor ein paar Jahren hat Jens einen Screencast erstellt. Die ersten Minuten sind aufschlussreich für die generelle Verwendung von AsciiDoc. Von uns verwendet aber niemand mehr den Editor Atom, weshalb die Hinweise zu den Plugins nicht mehr so hilfreich sind: https://www.youtube.com/watch?v=w9ZE-K5XBvc. Atom wurde von vielen EntwicklerInnen durch den Editor https://code.visualstudio.com/[VS Code] oder der freien Variante https://vscodium.com/[VS Codium] abgelöst.
+* Diverse Screencasts finden sich auf Youtube. Die ersten Minuten dieses Talks geben auch einen guten Einblick: https://www.youtube.com/watch?v=MyhiD65qaUI
+
+
+=== Rechtschreibung
+
+Sie müssen sich an geltende Rechtschreibregeln halten. Sind Ihre schriftliche Abgaben nicht leserlich oder verständlich geschrieben, können wir diese Abgaben nicht als bestanden werten. Bitte achten Sie selbst also auf eine korrekte Orthographie und Grammatik.
+
+Die Abgaben dürfen entweder in _deutscher_ oder _englischer_ Sprache verfasst werden.
+
+
+== Aufgaben
+
+=== Aufgabe 1
+Sie finden im Ordner `dokument` eine Anwendung, bei der leider das Buildfile kaputt ist. Bringen Sie das Projekt zum Laufen. Folgende Aufrufe sollen fehlerfrei funktionieren:
+
+* `gradle run` soll ein nicht leeres PDF Dokument im Ordner erzeugen.
+* `gradle run --args="Ihr Name"` soll ein nicht leeres PDF Dokument im Ordner erzeugen.
+* `gradle check` soll erfolgreich durchlaufen und dabei Informationen über vier funktionierende Tests ausgeben.
+
+NOTE: Der vorgegebene Inhalt des Buildfiles muss erhalten bleiben, sonst funktionieren die Tests nicht korrekt.
+
+
+=== Aufgabe 2
+
+NOTE: Verwenden Sie die Datei `loesung.adoc` für diese Aufgabe.
+
+Die Klasse `Gratulation` ist nicht entsprechend der Prinzipien, die wir gelernt haben, strukturiert. 
+
+* Identifizieren Sie die Verletzungen der gelernten Prinzipien.
+* Beschreiben Sie, worin genau die Verletzungen bestehen.
+* Erklären Sie, wie der Code verbessert werden kann, so dass die Prinzipien eingehalten werden.
+
+
+=== Aufgabe 3
+Restrukturieren Sie die Anwendung entsprechend Ihres Vorschlags. Sowohl das Single Responsibility Prinzip als auch das Information Hiding Prinzip sollen eingehalten werden. Das Programm muss immer noch genau wie vorher funktionieren.
