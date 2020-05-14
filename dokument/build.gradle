@@ -1,7 +1,33 @@
+plugins{
+    id 'java'
+    id 'application'
+}
+
+application{
+    mainClassName = 'propra.Main'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.pdfbox', name: 'pdfbox', version: '2.0.19'
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0-M1'
+    implementation group: 'org.assertj', name: 'assertj-core', version: '3.16.1'
+    implementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0-M1'
+}
+
+/* 
+java{
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+*/
 
 test {
     useJUnitPlatform()
     testLogging {
-            events "passed", "skipped", "failed"
-        }
+        events "passed", "skipped", "failed"
+    }
 }
