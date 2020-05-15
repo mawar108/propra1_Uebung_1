@@ -13,6 +13,10 @@ endif::[]
 
 === Aufgabe 2
 
-Beschreiben Sie hier: 
-- Welche Prinzipien wie genau verletzt wurden.
-- Welche Struktur der Code haben muss, damit die Prinzipien eingehalten werden 
+Beschreiben Sie hier:
+
+-Verstoß des SRP, da die Klasse Gratulation zwei Sachen macht.
+ Es erstellt den Namen sowie Text und erstellt das Format der PDF,
+hier wäre es angebracht diese zwei Funktionen in zwei Klassen aufzuteilen.
+
+-
